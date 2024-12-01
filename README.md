@@ -36,7 +36,7 @@
    Open the Arduino IDE, upload the corresponding .ino file to the microcontroller.
 
 ## Example Usage
-**Scenario 1 (Curator Interaction)**: Create a new archive by triggering a sensor; the RGB LED will display feedback.
+**Scenario 1 (Curator Interaction)**: Create a new archive; the RGB LED will display feedback.
 
 **Scenario 2 (Contribution Review)**: Use the GUI to review and categorize stories.
 
