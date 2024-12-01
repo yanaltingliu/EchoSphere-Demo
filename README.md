@@ -1,5 +1,4 @@
 # EchoSphere-Demo
-Interactive storytelling and collaborative archiving prototype
 
 **EchoSphere** is a Creativity Support Tool (CST) prototype designed for interactive storytelling and collaborative archiving. It integrates touch-based interactions, audio playback, and image displays to explore the concept of dynamic, participatory story preservation.
 
@@ -35,3 +34,10 @@ Interactive storytelling and collaborative archiving prototype
 
 5. **Upload Arduino Code**:
    Open the Arduino IDE, upload the corresponding .ino file to the microcontroller.
+
+## Example Usage
+**Scenario 1 (Curator Interaction)**: Create a new archive; the RGB LED will display feedback.
+
+**Scenario 2 (Contribution Review)**: Use the GUI to review and categorize stories.
+
+**Scenario 3 (Museum Interaction)**: Visitors explore stories via touch input, triggering audio playback and associated image displays.
