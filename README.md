@@ -34,3 +34,8 @@
 
 5. **Upload Arduino Code**:
    Open the Arduino IDE, upload the corresponding .ino file to the microcontroller.
+
+## Example Usage
+**Scenario 1 (Curator Interaction)**: Create a new archive by triggering a sensor; the RGB LED will display feedback.
+**Scenario 2 (Contribution Review)**: Use the GUI to review and categorize stories.
+**Scenario 3 (Museum Interaction)**: Visitors explore stories via touch input, triggering audio playback and associated image displays.
