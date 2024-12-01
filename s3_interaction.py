@@ -30,7 +30,7 @@ def display_image(image_path):
     img = Image.open(image_path)
 
     # Resize the image to fit the window (maintain aspect ratio)
-    img = img.resize((1600, 800))  # Removed Image.ANTIALIAS as it's now default behavior
+    img = img.resize((1600, 800))  
 
     # Convert the image to PhotoImage for Tkinter
     img_tk = ImageTk.PhotoImage(img)
