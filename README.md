@@ -27,3 +27,11 @@ Interactive storytelling and collaborative archiving prototype
    Use the following command to install Python libraries:
    ```bash
    pip install pygame pillow
+
+4. **Run the Python Code**:
+   Ensure the Arduino is connected and the correct COM port is configured in the Python code.
+   Run the Python script:
+   python script_name.py
+
+5. **Upload Arduino Code**:
+   Open the Arduino IDE, upload the corresponding .ino file to the microcontroller.
