@@ -1,5 +1,4 @@
 # EchoSphere-Demo
-Interactive storytelling and collaborative archiving prototype
 
 **EchoSphere** is a Creativity Support Tool (CST) prototype designed for interactive storytelling and collaborative archiving. It integrates touch-based interactions, audio playback, and image displays to explore the concept of dynamic, participatory story preservation.
 
