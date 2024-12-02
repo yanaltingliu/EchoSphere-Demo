@@ -5,10 +5,10 @@ import serial
 
 # Setup
 pygame.mixer.init()
-story_1_audio = "COVID_19_Small_Business_Story_Waterford_Wellness_and_Spa.mp3" 
-story_2_audio = "A_Story_of_Survival_-_COVID-19_Testimony.mp3"  
-story_1_image = "small_business_story.png"  
-story_2_image = "survival_story.png"  
+story_1_audio = "audio\COVID_19_Small_Business_Story_Waterford_Wellness_and_Spa.mp3" 
+story_2_audio = "audio\A_Story_of_Survival_-_COVID-19_Testimony.mp3"  
+story_1_image = "images\small_business_story.png"  
+story_2_image = "images\survival_story.png"  
 ser = serial.Serial('COM3', 9600)  
 
 # GUI setup
@@ -17,7 +17,7 @@ root.title("EchoSphere Museum Interaction")
 root.geometry("1600x1000")  # Adjusted size to fit the image and text
 
 # Status label for text
-status_label = Label(root, text="Touch the EchoSphere to Play a Story.", font=("Helvetica", 16))
+status_label = Label(root, text="Touch the EchoSphere to Play a Story.", font=("Helvetica", 26))
 status_label.pack(pady=10)
 
 # Label to display the image

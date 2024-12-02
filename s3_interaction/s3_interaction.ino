@@ -13,14 +13,14 @@ void loop() {
   if (digitalRead(touchSensor1) == HIGH) {
     Serial.println("STORY_1_TRIGGERED");
     digitalWrite(projectorLED, HIGH);
-    delay(15000);  // Simulate story playback
+    delay(50000);  // Simulate story playback
     digitalWrite(projectorLED, LOW);
   }
 
   if (digitalRead(touchSensor2) == HIGH) {
     Serial.println("STORY_2_TRIGGERED");
     digitalWrite(projectorLED, HIGH);
-    delay(15000);  // Simulate story playback
+    delay(50000);  // Simulate story playback
     digitalWrite(projectorLED, LOW);
   }
 }
