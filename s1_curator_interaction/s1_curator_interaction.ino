@@ -13,18 +13,33 @@ void setup() {
 }
 
 void loop() {
-  // Simulate curator interaction to create an archive
-  delay(5000);                 // Simulate a time gap
-  setColor(0, 255, 0);         // Set RGB LED to green
-  Serial.println("ARCHIVE_CREATED"); // Notify the laptop
-  delay(3000);                 // Keep the LED on for 3 seconds
-  setColor(0, 0, 0);           // Turn off the RGB LED
-  delay(10000);                // Wait before the next simulated interaction
+  if (Serial.available() > 0) {
+    String command = Serial.readStringUntil('\n');
+
+    if (command == "CREATE_ARCHIVE") {
+      // Subscenario 1: Confirmation message and green light
+      setColor(0, 255, 0); // Green
+      Serial.println("Archive creation confirmed!");
+      delay(3000);
+      setColor(0, 0, 0); // Turn off LED
+    } else if (command == "ASK_DETAILS") {
+      // Subscenario 2: Asking for details
+      Serial.println("Please provide the archive theme and requirements.");
+      delay(3000);
+      setColor(0, 0, 0); // Turn off LED
+    } else if (command == "NOTIFICATION_SENT") {
+      // Subscenario 3: Notification sent and orange light
+      setColor(255, 165, 0); // Orange
+      Serial.println("Notification sent to the community.");
+      delay(10000);
+      setColor(0, 0, 0); // Turn off LED
+    }
+  }
 }
 
 // Function to set the RGB LED color
 void setColor(int red, int green, int blue) {
-  analogWrite(redPin, red);    // Adjust red brightness
-  analogWrite(greenPin, green); // Adjust green brightness
-  analogWrite(bluePin, blue);   // Adjust blue brightness
+  analogWrite(redPin, red);    
+  analogWrite(greenPin, green); 
+  analogWrite(bluePin, blue);   
 }
